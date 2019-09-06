@@ -1,0 +1,13 @@
+#titleContainer {
+    border-bottom: blue 2px solid;
+    background-color: lightcyan;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+#inputContainer {
+    background-color: lightcyan;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+

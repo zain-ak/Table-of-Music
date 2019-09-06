@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>The Table of Stuff</title>
+    <link rel="shortcut icon" type="image/png" href="favicon.png"/>
+    <link rel="stylesheet" href="assets/style.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+    <div id="titleContainer">
+        <h2 style="color: blue; padding-left: 10px; padding-top: 10px;">Welcome to the Table of Music!</h2>
+        <p style="color: blue; padding-left: 10px;">Add any type of music that you'd like to keep records of. 
+        </p>
+        <p style="color: blue; padding-left: 10px; font-style:italic; font-size: .8em;">*Music rated above 8 can have the option to be favorited, drag the slider and leave to activate</p>
+    </div>
+
+       <!-- <form id="inputForm" style="display:inline;">
+            <p style="color: blue; padding-left: 10px;">Stuff Type</p>
+            <select id="type">
+                <option value="movies">Movies</option>
+                <option value="music">Music</option>
+                <option value="tv">TV Shows</option>
+                <option value="books">Books</option>
+            </select>
+        </form> -->
+
+        <form id="musicForm" style="display:inherit;">
+            <div class="row">
+                <div class="input-field col s3">
+                    <input id="musicTitle" type="text">
+                    <label for="musicTitle">Song Title</label>
+                </div>
+                <div class="input-field col s3">
+                        <input id="musicArtist" type="text">
+                        <label for="musicArtist">Song Artist</label>
+                </div>
+                <div class="input-field col s3">
+                        <input id="musicAlbum" type="text">
+                        <label for="musicAlbum">Album</label>
+                </div>
+                <p class="range-field col s2"> Rating:
+                    <input type="range" id="musicRatingSlider" min="0" max="10" />
+                </p>
+                <div id="favContainer" style="display: none"><p>Favorite? <br>
+                        <label>
+                          <input id="musicFavorite" class="col s2" type="checkbox" />
+                          <span></span>
+                        </label>
+                      </p></div>
+            </div>
+            <button class="btn waves-effect waves-light" id="musicBtn" type="submit" name="action" style="padding-bottom:30px;">Add
+                <i class="material-icons right">add</i>
+            </button>
+        </form>
+
+    <div id="outputContainer">
+        <div id="musicTable"></div>
+        <table class="striped" id="musicTableHeh">
+            <thead>
+                <tr>
+                    <th>Favorite</th>
+                    <th>Song Title</th>
+                    <th>Song Artist</th>
+                    <th>Song Album</th>
+                    <th>Song Rating</th>
+                </tr>
+              </thead> 
+              <tbody>
+                
+              </tbody>   
+        </table>
+    </div>
+
+    <button id="clearBtn" class="btn orange darken-3 waves-effect waves-light" type="button" name="action">Clear Storage
+            <i class="material-icons right">delete</i>
+          </button>
+
+    <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="assets/jquery-3.4.1.min.js"></script>
+</body>
+</html>
